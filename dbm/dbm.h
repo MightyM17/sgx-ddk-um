@@ -61,7 +61,7 @@ typedef struct
 
 typedef struct
 {
-  void (*free)();
+  void (*free)(void *);
   int (*get_buffer_stride_and_size)(dbm_device *dev,
                                     uint32_t bpp,
                                     uint32_t width,
